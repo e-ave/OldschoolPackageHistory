@@ -116,6 +116,8 @@
     ├── javapal
     ├── messaging
     │   ├── game
+    │   │   ├── clan
+    │   │   │   └── clanloginserver
     │   │   ├── friends
     │   │   │   └── friendloader
     │   │   ├── globalvariables
@@ -160,6 +162,7 @@
     │   └── zkm
     ├── oldscape
     │   ├── client
+    │   │   ├── chat
     │   │   ├── fonts
     │   │   ├── heatmap
     │   │   ├── logging
@@ -182,10 +185,14 @@
     │       └── protshuffle
     │           └── parser
     ├── rs2lib
+    │   ├── clanchat
+    │   ├── clanprofile
+    │   ├── config
     │   ├── configdecoder
     │   ├── constants
     │   ├── defaults
     │   ├── friends
+    │   ├── general
     │   ├── globalvariables
     │   ├── gwc
     │   ├── hiscore
@@ -204,12 +211,15 @@
     │   ├── script
     │   │   ├── trigger
     │   │   └── var
+    │   ├── serialisation
+    │   ├── serversidescript
     │   ├── snapevent2
     │   ├── startup
     │   ├── stockmarket
     │   ├── util
     │   ├── var
     │   │   └── container
+    │   ├── vartype
     │   ├── watchevent
     │   └── worldmap
     └── wordfilter
