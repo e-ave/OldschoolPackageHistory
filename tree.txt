@@ -122,6 +122,7 @@
     │   │   ├── hiscore
     │   │   │   └── rs
     │   │   ├── itemcode
+    │   │   ├── itemgrant
     │   │   ├── logging
     │   │   │   ├── gamelogclienterror
     │   │   │   ├── gamelogspecs
