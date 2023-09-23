@@ -134,6 +134,7 @@
     │   │   │   └── gamelogtrade
     │   │   ├── loginserver
     │   │   ├── playerwatch
+    │   │   ├── pvpkills
     │   │   └── world
     │   ├── infrastructure
     │   │   ├── authenticationserver
