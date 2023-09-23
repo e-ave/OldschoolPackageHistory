@@ -185,13 +185,11 @@
     │       └── protshuffle
     │           └── parser
     ├── rs2lib
-    │   ├── clanchat
     │   ├── clanprofile
     │   ├── config
     │   ├── configdecoder
     │   ├── constants
     │   ├── defaults
-    │   ├── friends
     │   ├── general
     │   ├── globalvariables
     │   ├── gwc
@@ -214,6 +212,9 @@
     │   ├── serialisation
     │   ├── serversidescript
     │   ├── snapevent2
+    │   ├── social
+    │   │   ├── clanchat
+    │   │   └── friendschat
     │   ├── startup
     │   ├── stockmarket
     │   ├── util
