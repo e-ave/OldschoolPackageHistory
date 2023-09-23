@@ -66,9 +66,12 @@
     │   └── staffauth
     ├── game
     │   └── shared
-    │       └── client
-    │           └── obfuscation
-    │               └── reflectionchecker
+    │       ├── client
+    │       │   └── obfuscation
+    │       │       └── reflectionchecker
+    │       └── web
+    │           └── rest
+    │               └── contentbuilders
     ├── integration
     │   ├── accountassociation
     │   ├── accountfeatures
@@ -179,6 +182,7 @@
     │   │       ├── enums
     │   │       └── protocol
     │   ├── osrenderer
+    │   ├── pub
     │   └── shared
     │       ├── pow
     │       ├── prot
