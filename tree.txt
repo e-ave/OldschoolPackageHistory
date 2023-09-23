@@ -1,9 +1,11 @@
 └── jagex
     ├── core
-    │   └── stringtools
-    │       ├── general
-    │       ├── utf8
-    │       └── webtools
+    │   ├── stringtools
+    │   │   ├── general
+    │   │   ├── utf8
+    │   │   └── webtools
+    │   ├── time
+    │   └── util
     ├── framework
     │   └── net
     │       ├── socket
@@ -17,6 +19,7 @@
     │       │   ├── native_linux.c
     │       │   └── native_win.c
     │       └── web
+    │           ├── server
     │           └── template
     ├── jagex3
     │   ├── accountassociation
@@ -35,7 +38,6 @@
     │   ├── dash3d
     │   │   └── debug
     │   ├── datastruct
-    │   │   ├── keyedcache2
     │   │   ├── newcache
     │   │   └── queue
     │   ├── fileq
@@ -85,6 +87,8 @@
     │   ├── gamelogclienterror
     │   ├── gamelogspecs
     │   ├── globalvariables
+    │   ├── infrastructure
+    │   │   └── identity_service
     │   ├── iplog
     │   ├── itemcode
     │   ├── microtransaction
