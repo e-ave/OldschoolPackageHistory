@@ -1,5 +1,19 @@
 └── jagex
     ├── core
+    │   ├── array
+    │   ├── bytepacking
+    │   ├── client
+    │   ├── compression
+    │   │   ├── bzip2
+    │   │   ├── gzip
+    │   │   └── huffman
+    │   ├── constants
+    │   ├── encryption
+    │   ├── graphtool
+    │   ├── io
+    │   │   └── client
+    │   ├── legacy
+    │   ├── math
     │   ├── stringtools
     │   │   ├── general
     │   │   ├── utf8
@@ -15,26 +29,63 @@
     │   │   ├── hashtable
     │   │   └── linklist
     │   ├── map
-    │   └── queue
+    │   ├── queue
+    │   └── wrapper
     ├── framework
-    │   └── net
-    │       ├── socket
-    │       │   ├── build_linux.sh
-    │       │   ├── build_mac.sh
-    │       │   ├── jagsock.h
-    │       │   ├── jagsock.sln
-    │       │   ├── jagsock.suo
-    │       │   ├── jagsock.vcproj
-    │       │   ├── jagsock.vcxproj
-    │       │   ├── native_linux.c
-    │       │   └── native_win.c
-    │       └── web
-    │           ├── server
-    │           └── template
-    ├── jagex3
+    │   ├── floodprotection
+    │   ├── io
+    │   │   ├── fileq
+    │   │   │   └── splitalgorithm
+    │   │   ├── filesystem
+    │   │   │   ├── index
+    │   │   │   ├── robust
+    │   │   │   └── spooling
+    │   │   └── process
+    │   ├── legacy
+    │   │   └── geoip
+    │   ├── logging
+    │   │   └── eventlog
+    │   ├── monitoring
+    │   │   └── file_viewer
+    │   ├── net
+    │   │   ├── p2p
+    │   │   ├── socket
+    │   │   │   ├── build_linux.sh
+    │   │   │   ├── build_mac.sh
+    │   │   │   ├── jagsock.h
+    │   │   │   ├── jagsock.sln
+    │   │   │   ├── jagsock.suo
+    │   │   │   ├── jagsock.vcproj
+    │   │   │   ├── jagsock.vcxproj
+    │   │   │   ├── native_linux.c
+    │   │   │   └── native_win.c
+    │   │   └── web
+    │   │       ├── server
+    │   │       └── template
+    │   ├── profiling
+    │   └── staffauth
+    ├── game
+    │   └── shared
+    │       └── client
+    │           └── obfuscation
+    │               └── reflectionchecker
+    ├── integration
     │   ├── accountassociation
     │   ├── accountfeatures
-    │   ├── attackprotect
+    │   ├── authenticationserver
+    │   ├── config
+    │   │   ├── affiliate
+    │   │   ├── dlclient
+    │   │   ├── domain
+    │   │   └── service
+    │   ├── constants
+    │   │   └── transformers
+    │   ├── displaynames
+    │   ├── microtransaction
+    │   ├── poll
+    │   ├── publicauth
+    │   └── tracking
+    ├── jagex3
     │   ├── client
     │   │   ├── applet
     │   │   ├── auth
@@ -44,11 +95,9 @@
     │   │       ├── mouse
     │   │       └── softkeyboard
     │   ├── constants
-    │   │   └── transformers
     │   ├── dash3d
     │   │   └── debug
     │   ├── fileq
-    │   ├── geoip
     │   ├── graphics
     │   │   ├── animation
     │   │   └── png
@@ -57,55 +106,54 @@
     │   ├── js5
     │   ├── jstring
     │   ├── math
-    │   ├── microtransaction
     │   ├── midi2
-    │   ├── monitoring
-    │   │   └── file_viewer
-    │   ├── namespace
     │   ├── obfuscation
     │   │   └── remap
     │   ├── packjs5
-    │   ├── peer2peer
-    │   ├── poll
-    │   ├── profiling
-    │   ├── reflectionchecker
     │   ├── sound
-    │   ├── staffauth2
     │   ├── totp
-    │   ├── util
-    │   ├── webquery2
-    │   ├── webserver
-    │   └── wordfilter2
+    │   └── util
     ├── javapal
-    ├── messageprotocol
-    │   ├── authenticationServer
-    │   │   ├── constants
-    │   │   ├── dataStruct
-    │   │   │   ├── activation
-    │   │   │   ├── activity
-    │   │   │   ├── billing
-    │   │   │   └── recommendation
-    │   │   └── exceptions
-    │   ├── billing
-    │   │   ├── derived
-    │   │   └── jcoins
-    │   ├── billingbonds
-    │   ├── displaynames
-    │   ├── gamelogclienterror
-    │   ├── gamelogspecs
-    │   ├── globalvariables
+    ├── messaging
+    │   ├── game
+    │   │   ├── friends
+    │   │   │   └── friendloader
+    │   │   ├── globalvariables
+    │   │   ├── hiscore
+    │   │   │   └── rs
+    │   │   ├── itemcode
+    │   │   ├── logging
+    │   │   │   ├── gamelogclienterror
+    │   │   │   ├── gamelogspecs
+    │   │   │   └── gamelogtrade
+    │   │   ├── loginserver
+    │   │   ├── playerwatch
+    │   │   └── world
     │   ├── infrastructure
-    │   │   └── identity_service
-    │   ├── iplog
-    │   ├── itemcode
-    │   ├── microtransaction
+    │   │   ├── authenticationserver
+    │   │   │   ├── constants
+    │   │   │   ├── datastruct
+    │   │   │   │   ├── activation
+    │   │   │   │   ├── activity
+    │   │   │   │   ├── billing
+    │   │   │   │   └── recommendation
+    │   │   │   └── exceptions
+    │   │   ├── billing
+    │   │   │   ├── bonds
+    │   │   │   ├── derived
+    │   │   │   └── jcoins
+    │   │   ├── displaynames
+    │   │   ├── icuq
+    │   │   ├── identity_service
+    │   │   ├── iplog
+    │   │   ├── main
+    │   │   ├── microtransaction
+    │   │   ├── poll
+    │   │   ├── snapshot
+    │   │   ├── totpauthenticator
+    │   │   └── twitterbot
     │   ├── p2prequest
-    │   ├── p2p_request
-    │   ├── playerwatch
-    │   ├── poll
-    │   ├── totpauthenticator
-    │   ├── twitterbot
-    │   └── worldmanager
+    │   └── p2p_request
     ├── obfuscation
     │   ├── flutterer
     │   └── zkm
@@ -115,6 +163,7 @@
     │   │   ├── heatmap
     │   │   ├── logging
     │   │   ├── minimenu
+    │   │   ├── notifications
     │   │   ├── social
     │   │   │   └── sortfilter
     │   │   │       └── online
@@ -128,34 +177,35 @@
     │   ├── osrenderer
     │   └── shared
     │       └── prot
-    └── rs2lib
-        ├── configdecoder
-        ├── constants
-        ├── defaults
-        ├── friends
-        ├── globalvariables
-        ├── gwc
-        ├── hiscore
-        ├── logging
-        │   ├── eventlog
-        │   │   └── player
-        │   │       ├── chat
-        │   │       └── script
-        │   ├── playerwatch
-        │   │   ├── controlinput
-        │   │   ├── misc
-        │   │   ├── scripted
-        │   │   └── variables
-        │   └── technical
-        ├── movement
-        ├── script
-        │   ├── trigger
-        │   └── var
-        ├── snapevent2
-        ├── startup
-        ├── stockmarket
-        ├── util
-        ├── var
-        │   └── container
-        ├── watchevent
-        └── worldmap
+    ├── rs2lib
+    │   ├── configdecoder
+    │   ├── constants
+    │   ├── defaults
+    │   ├── friends
+    │   ├── globalvariables
+    │   ├── gwc
+    │   ├── hiscore
+    │   ├── logging
+    │   │   ├── eventlog
+    │   │   │   └── player
+    │   │   │       ├── chat
+    │   │   │       └── script
+    │   │   ├── playerwatch
+    │   │   │   ├── controlinput
+    │   │   │   ├── misc
+    │   │   │   ├── scripted
+    │   │   │   └── variables
+    │   │   └── technical
+    │   ├── movement
+    │   ├── script
+    │   │   ├── trigger
+    │   │   └── var
+    │   ├── snapevent2
+    │   ├── startup
+    │   ├── stockmarket
+    │   ├── util
+    │   ├── var
+    │   │   └── container
+    │   ├── watchevent
+    │   └── worldmap
+    └── wordfilter
